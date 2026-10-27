@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 export default function Home() {
@@ -31,7 +33,6 @@ export default function Home() {
         <div className="mt-8">
           <button
             onClick={() => {
-              // This would trigger scenario in a real implementation
               window.location.href = "/ops?scenario=play";
             }}
             className="px-6 py-3 border-3 border-hold text-ink text-body font-medium"
