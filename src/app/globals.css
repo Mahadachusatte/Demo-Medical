@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-paper: #EEF2EF;
+  --color-ink: #15243A;
+  --color-rule: #C5D0CB;
+  --color-ready: #1E6B52;
+  --color-hold: #A86A12;
+  --color-stop: #A3322B;
+  --color-agent: #5A3FC0;
+}
+
+* {
+  font-variant-numeric: tabular-nums;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-schibsted-grotesk), system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
