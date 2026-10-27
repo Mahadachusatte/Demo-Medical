@@ -79,7 +79,7 @@ export default function CompliancePage() {
             <div className="text-body mb-4 p-3 bg-rule/10">
               {workers.find(w => w.id === compliance.find(c => c.id === showConfirm)?.workerId)?.name}
             </div>
-            <div className="text-body mb-4">Message: "Your DBS check expires soon. Please renew it." (demo)</div>
+            <div className="text-body mb-4">Message: &quot;Your DBS check expires soon. Please renew it.&quot; (demo)</div>
             <div className="flex gap-3">
               <button onClick={() => handleSend(showConfirm)} className="px-4 py-2 bg-ink text-paper text-body">
                 Send reminder
