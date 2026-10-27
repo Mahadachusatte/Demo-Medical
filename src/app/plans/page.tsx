@@ -44,3 +44,4 @@ export default function PlansPage() {
     </div>
   );
 }
+export const dynamic = 'force-dynamic';

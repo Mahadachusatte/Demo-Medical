@@ -63,3 +63,4 @@ export default function WorkerPage() {
     </div>
   );
 }
+export const dynamic = 'force-dynamic';
